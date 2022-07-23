@@ -19,5 +19,11 @@ namespace SOLID.S
             Cantidad = cantidad;
         }
 
+        // Métodos
+        public double Subtotal()
+        {
+            return Cantidad * Producto.Precio;
+        }
+
     }
 }
