@@ -6,32 +6,20 @@ using System.Threading.Tasks;
 
 namespace SOLID.O
 {
-    public class DocumentoContable
+    public abstract class DocumentoContable
     {
         // Atributos
         public DateTime Fecha { get; set; }
         public double Importe { get; set; }
         public int Numero { get; set; }
-        public TipoDocumentoContable Tipo { get; set; }
 
         // Constructores
-        public DocumentoContable(TipoDocumentoContable tipo, int numero)
+        public DocumentoContable(int numero)
         {
-            Tipo = tipo;
             Numero = numero;
         }
 
-        public string Descripcion()
-        {
-            switch (Tipo)
-            {
-                case TipoDocumentoContable.Factura:
-                    return $"FC-{Numero}";
-                case TipoDocumentoContable.NotaDeCredito:
-                    return $"NC-{Numero}";
-                default:
-                    return $"N/D";
-            }
-        }
+        // Métodos
+        public abstract string Descripcion();
     }
 }

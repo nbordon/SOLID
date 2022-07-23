@@ -10,10 +10,10 @@ namespace SOLID.O
     {
         static void Main(string[] args)
         {
-            DocumentoContable unaFactura = new DocumentoContable(TipoDocumentoContable.Factura, 12340);
+            DocumentoContable unaFactura = new Factura(12340);
             Console.WriteLine(unaFactura.Descripcion());
 
-            DocumentoContable unaNotaDeCredito = new DocumentoContable(TipoDocumentoContable.NotaDeCredito, 11854);
+            DocumentoContable unaNotaDeCredito = new NotaDeCredito(11854);
             Console.WriteLine(unaNotaDeCredito.Descripcion());
 
             Console.ReadKey();
