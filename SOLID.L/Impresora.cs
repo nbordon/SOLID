@@ -14,14 +14,9 @@ namespace SOLID.L
             Console.WriteLine(remito.Imprimir());
         }
 
-        public void ImprimirFactura(Factura factura)
+        public void Imprimir(DocumentoContable documento)
         {
-            Console.WriteLine(factura.Imprimir());
-        }
-
-        public void ImprimirNotaDeCredito(NotaDeCredito notaDeCredito)
-        {
-            Console.WriteLine(notaDeCredito.Imprimir());
+            Console.WriteLine(documento.Imprimir());
         }
     }
 }

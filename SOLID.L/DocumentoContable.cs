@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SOLID.L
 {
-    public abstract class Documento
+    public abstract class DocumentoContable
     {
         // Atributos
         public DateTime Fecha { get; set; }
@@ -14,7 +14,7 @@ namespace SOLID.L
         protected string _sigla;
 
         // Constructores
-        public Documento(int numero, DateTime fecha)
+        public DocumentoContable(int numero, DateTime fecha)
         {
             Numero = numero;
             Fecha = fecha;

@@ -13,12 +13,14 @@ namespace SOLID.L
             Impresora impresora = new Impresora();
 
             Remito rto = new Remito(4598, DateTime.Now, 10);
-            Factura fc = new Factura(4458, DateTime.Now);
-            NotaDeCredito nc = new NotaDeCredito(7984, DateTime.Now);
+            DocumentoContable fc = new Factura(4458, DateTime.Now);
+            DocumentoContable nc = new NotaDeCredito(7984, DateTime.Now);
+            DocumentoContable nd = new NotaDeDebito(56985, DateTime.Now);
 
             impresora.ImprimirRemito(rto);
-            impresora.ImprimirFactura(fc);
-            impresora.ImprimirNotaDeCredito(nc);
+            impresora.Imprimir(fc);
+            impresora.Imprimir(nc);
+            impresora.Imprimir(nd);
 
             Console.ReadKey();
         }

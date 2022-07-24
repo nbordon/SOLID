@@ -43,10 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Documento.cs" />
+    <Compile Include="DocumentoContable.cs" />
     <Compile Include="Factura.cs" />
     <Compile Include="Impresora.cs" />
     <Compile Include="NotaDeCredito.cs" />
+    <Compile Include="NotaDeDebito.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Remito.cs" />

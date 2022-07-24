@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SOLID.L
 {
-    public class NotaDeCredito : Documento
+    public class NotaDeCredito : DocumentoContable
     {
         // Constructores
         public NotaDeCredito(int numero, DateTime fecha) : base(numero, fecha)
