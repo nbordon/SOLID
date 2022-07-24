@@ -15,11 +15,6 @@ namespace SOLID.I
         public Factura(int numero, DateTime fecha) : base(numero, fecha) { }
 
         // Métodos
-        public override void EnviarPorEmail()
-        {
-            // esta operacion no es valida para factura
-        }
-
         public override void Imprimir()
         {
             Console.WriteLine($"Imprimiendo la factura {Numero} del día {Fecha.ToShortDateString()} con CAI {CAI}");

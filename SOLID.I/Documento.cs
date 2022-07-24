@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SOLID.I
 {
-    public abstract class Documento
+    public abstract class Documento : IImprimible
     {
         // Atributos
         public int Numero { get; set; }
@@ -21,6 +21,5 @@ namespace SOLID.I
 
         // Métodos
         public abstract void Imprimir();
-        public abstract void EnviarPorEmail();
     }
 }

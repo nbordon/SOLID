@@ -19,7 +19,7 @@ namespace SOLID.I
             facturaElectronica.Imprimir();
             facturaElectronica.EnviarPorEmail();
             factura.Imprimir();
-            factura.EnviarPorEmail(); // no se puede enviar por email
+            //factura.EnviarPorEmail(); // no se puede enviar por email
 
             Console.ReadKey();
         }
