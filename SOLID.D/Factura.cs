@@ -14,10 +14,15 @@ namespace SOLID.D
             _sigla = "FC";
         }
 
+
         // Métodos
         public override double Total()
         {
             return Importe * 1.21; // EJEMPLO
+        }
+        public override void Imprimir()
+        {
+            Console.WriteLine($"Imprimiendo factura {Numero} del {Fecha.ToShortDateString()} por un importe de ${Total()}");
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SOLID.D
 {
-    public abstract class Impuesto
+    public abstract class Impuesto : IImprimible
     {
         // Atributos
         public double Importe { get; set; }
@@ -16,5 +16,8 @@ namespace SOLID.D
         {
             Importe = importe;
         }
+
+        //Métodos
+        public abstract void Imprimir();
     }
 }

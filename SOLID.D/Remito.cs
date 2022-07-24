@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SOLID.D
 {
-    public class Remito
+    public class Remito : IImprimible
     {
         // Atributos
         public int Numero { get; set; }
@@ -19,6 +19,12 @@ namespace SOLID.D
             Numero = numero;
             Fecha = fecha;
             CantidadBultos = cantidadBultos;
+        }
+
+        // Métodos
+        public void Imprimir()
+        {
+            Console.WriteLine($"Imprimiendo remito numero {Numero} del {Fecha.ToShortDateString()} con {CantidadBultos} bultos");
         }
     }
 }

@@ -16,5 +16,11 @@ namespace SOLID.D
         {
             CodigoPago = codigoPago;
         }
+
+        // Métodos
+        public override void Imprimir()
+        {
+            Console.WriteLine($"Imprimiendo factura de luz con código de pago {CodigoPago} por un importe de ${Importe}");
+        }
     }
 }

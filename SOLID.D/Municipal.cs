@@ -16,5 +16,11 @@ namespace SOLID.D
         {
             Partida = partida;
         }
+
+        // Métodos
+        public override void Imprimir()
+        {
+            Console.WriteLine($"Imprimiendo impuesto municipal de partida {Partida} por un importe de ${Importe}");
+        }
     }
 }

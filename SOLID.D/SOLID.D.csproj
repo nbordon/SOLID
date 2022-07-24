@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cobranza.cs" />
     <Compile Include="DocumentoContable.cs" />
     <Compile Include="Factura.cs" />
     <Compile Include="FacturaDeLuz.cs" />
+    <Compile Include="IImprimible.cs" />
     <Compile Include="Impresora.cs" />
     <Compile Include="Impuesto.cs" />
     <Compile Include="Municipal.cs" />

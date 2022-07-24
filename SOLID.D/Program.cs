@@ -18,13 +18,21 @@ namespace SOLID.D
             Municipal mu = new Municipal(124.63, "A2321");
             ReciboDeSueldo rs = new ReciboDeSueldo(15000, 458447525);
             Remito rto = new Remito(45874, DateTime.Now, 28);
+            Cobranza co = new Cobranza(2530.55, 99625);
 
-            impresora.Imprimir(fc);
-            impresora.Imprimir(nc);
-            impresora.Imprimir(fl);
-            impresora.Imprimir(mu);
-            impresora.Imprimir(rs);
-            impresora.Imprimir(rto);
+            List<IImprimible> lista = new List<IImprimible>();
+            lista.Add(fc);
+            lista.Add(nc);
+            lista.Add(fl);
+            lista.Add(mu);
+            lista.Add(rs);
+            lista.Add(rto);
+            lista.Add(co);
+
+            foreach (var item in lista)
+            {
+                impresora.Imprimir(item);
+            }
 
             Console.ReadKey();
         }
